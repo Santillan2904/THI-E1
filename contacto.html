@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+   	<title>Mi página web personal</title>
+      <meta charset="utf-8">
+      <style type="text/css">
+          body{
+            background-color: lightpink;
+            font-family: sans-serif;
+            margin-left: 200px;
+             margin-right: 200px;
+             margin-top: 100px;
+             padding: 5px;
+             width: 800px;
+         }
+         h1 {
+            border-bottom: 2px solid black;
+            color:crimson;
+            padding-bottom: 14px;
+            text-align: center;
+            margin-bottom: 1.5em;
+         }
+         h2 {
+            text-align: left;
+             border-bottom: 1px dotted #1bb9c2;
+             padding-bottom: 10px;
+              margin-top: 2em;
+              margin-bottom: 1.5em;
+              width: 80%;
+           }
+           p{
+            margin-left: 40px;
+            line-height: 1.5em;
+         }
+         main{
+            border: 2px solid black;
+            width: 800px;
+         }
+         img{
+            margin: auto;
+         }
+         h3{
+            text-align: left;
+            border-bottom: 1px dotted #1bb9c2;
+            padding-bottom: 10px;
+            margin-top: 2em;
+             margin-bottom: 1.5em;
+              width: 80%;
+              margin-left: 40px;
+           }
+         a {
+            color: whitesmoke;
+            border-width: 700px;
+         }
+         .menu{
+            background-color: crimson;
+         }
+         *{
+            text-decoration: none;
+         }
+      </style>
+   </head>
+   <body>
+    <header>
+         <div class="menu">
+            <nav>
+               <a href="file:///C:/Users/calparsoroj/Desktop/Segundo%20Cuatrimestre/TCAM%202/THI-16641698W-E1/Sobre%20mi.html/sobremi.html">Sobre mí/</a>
+               <a href="file:///C:/Users/calparsoroj/Desktop/Segundo%20Cuatrimestre/TCAM%202/THI-16641698W-E1/Portafólio.html/Portafolio.html">Portafólio/</a>
+               <a href="file:///C:/Users/calparsoroj/Desktop/Segundo%20Cuatrimestre/TCAM%202/THI-16641698W-E1/Contacto.html/contacto.html">Contacto</a>
+            </nav>
+         </div>
+      </header>
+      <main> 
+      <h1>Contacto &#128516;</h1>
+      <p>Email: jon.calparsoro@opendeusto.es</p>
+      <p>Si desea ponerse en contacto conmigo, le agradezco que rellene el siguiente formulario antes de enviar algún correo</p>
+      <form action="server.php" method="get">
+         <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">*Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <br><br>
+            <label for="apellidos">*Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos">
+            <br><br>
+            <label for="lugar">*Lugar de residencia:</label>
+            <select id="lugar" name="lugar">
+               <optgroup label="lugar">
+                  <option>Resto del Mundo</option>
+                  <option>País Vasco</option>
+                  <option>La Rioja</option>
+                  <option>Cantabria</option>
+                  <option>Galícia</option>
+                  <option>Cataluña</option>
+                  <option>Andalucía</option>
+                  <option>Castilla-La Mancha</option>
+                  <option>Castilla y León</option>
+                  <option>Extremadúra</option>
+                  <option>Comunidad de Madríd</option>
+                  <option>Islas Canárias</option>
+                  <option>Islas Baleares</option>
+                  <option>Aragón</option>
+                  <option>Comunidad Foral de Navarra</option>
+                  <option>Comunidad Valenciana</option>
+                  <option>Principado de Asturias</option>
+                  <option>Región de Murcia</option>
+                  <option>Ceuta/Melilla</option>
+               </optgroup>
+            </select>
+            <label for="postal">Código postal:</label>
+            <input type="text" id="postal" name="postal">
+            <br><br>
+            <label for="correo">*Email:</label>
+            <input type="text" id="correo" name="correo">
+            <br><br>
+            <label for="numero">Número de contacto:</label>
+            <input type="tel" id="numero" name="numero" placeholder="+34">
+         </fieldset>
+         <fieldset>
+            <legend>Para concertar una reunión</legend>
+            <p>Selecciona la fecha y hora de la reunión:</p>
+         <input type="date" name="fecha" id="id-fecha">
+         <input type="time" name="hora" id="id-hora">
+         <br><br>
+         <textarea name="comentarios" rows="6" cols="30" placeholder="comentarios"></textarea>
+         </fieldset>
+         <label for="condiciones">Acepto las condiciones</label>
+            <input type="checkbox" name="condiciones" id="condiciones" value="si">
+         <br><br>
+         <input type="submit" value="Enviar">
+      </form>
+   </main> 
+</body>
